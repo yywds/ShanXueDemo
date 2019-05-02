@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".LoginAndRegister.Guide">
+
+    <!-- android:scaleType="centerCrop"使图片适配屏幕-->
+    <ImageView
+        android:id="@+id/bootView"
+        android:background="@drawable/loginimage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:layout_centerHorizontal="true"
+        android:gravity="bottom"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <Button
+            android:id="@+id/login"
+            android:text="登录"
+            android:textSize="18dp"
+            android:textColor="#fff"
+            android:alpha="0.85"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/login"
+            android:layout_width="match_parent"
+            android:layout_height="45dp" />
+        <Button
+            android:id="@+id/register"
+            android:textColor="#fff"
+            android:text="新用户"
+            android:textSize="18dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="20dp"
+            android:layout_weight="1"
+            android:alpha="0.85"
+            android:background="@drawable/register"
+            android:layout_width="match_parent"
+            android:layout_height="45dp" />
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

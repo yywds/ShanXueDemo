@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <TextView
+        android:layout_marginTop="50dp"
+        android:textColor="#000"
+        android:id="@+id/tv_nichen"
+        android:textSize="15dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:drawableLeft="@drawable/left"
+        android:layout_height="50dp"
+        android:layout_width="match_parent"
+        android:gravity="center_vertical"
+        android:text="          个性签名" />
+    <TextView
+        android:id="@+id/xian"
+        android:layout_below="@id/tv_nichen"
+        android:background="#ebebeb"
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+
+        <android.support.design.widget.TextInputEditText
+            android:layout_width="match_parent"
+            android:id="@+id/bjnc"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/xian"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:text=""
+            android:theme="@style/xiugai"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/btn"
+            android:layout_marginTop="50dp"
+            android:textColor="#fff"
+            android:textSize="20dp"
+            android:layout_below="@id/bjnc"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/color"
+            android:text="保存"
+            android:layout_width="500dp"
+            android:layout_height="45dp" />
+    </RelativeLayout>
+</LinearLayout>

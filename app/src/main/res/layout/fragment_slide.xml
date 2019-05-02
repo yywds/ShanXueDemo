@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bj"
+    xmlns:blurkit="http://schemas.android.com/apk/res-auto">
+
+<android.support.v7.widget.RecyclerView
+
+    android:id="@+id/recycler_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     />
+
+    <com.example.administrator.onlinelearning.Page.Test.SmileView
+        android:layout_above="@id/bottom"
+        android:id="@+id/smile_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true" />
+
+    <LinearLayout
+        android:background="#fff"
+        android:id="@+id/bottom"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        >
+        <LinearLayout
+            android:id="@+id/ll_main_home1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center"
+            >
+            <ImageView
+                android:id="@+id/iv_main_home1"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/xuexi"
+                />
+            <TextView
+                android:id="@+id/study"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000  "
+                android:text="学习" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/ll_main_home2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center"
+            >
+            <ImageView
+                android:id="@+id/iv_main_home2"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/ceshilv"
+                />
+            <TextView
+                android:id="@+id/interaction"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#2ecc71"
+                android:text="测试" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="15dp"
+            android:id="@+id/qiangda"
+            android:background="@drawable/qiangda"
+            android:layout_width="42dp"
+            android:layout_height="42dp" />
+
+        <LinearLayout
+            android:id="@+id/ll_main_home3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center"
+            >
+            <ImageView
+                android:id="@+id/iv_main_home3"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/gongju"
+                />
+
+            <TextView
+                android:id="@+id/pk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000  "
+                android:text="工具" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_main_home4"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center"
+            >
+
+            <ImageView
+                android:id="@+id/iv_main_home4"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/tx"
+                />
+            <TextView
+                android:id="@+id/me"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000  "
+                android:text="我的" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

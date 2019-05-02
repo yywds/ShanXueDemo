@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/root_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.example.administrator.onlinelearning.Page.home.FullScreenVideoView
+        android:id="@+id/video_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="false"
+        android:focusable="false" />
+
+
+    <ImageView
+        android:id="@+id/img_thumb"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="false"
+        android:focusable="false"
+        android:scaleType="centerCrop"
+        android:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/img_play"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_centerInParent="true"
+        android:alpha="0"
+        android:clickable="true"
+        android:focusable="true"
+        android:src="@drawable/stop" />
+
+
+
+
+    <LinearLayout
+        android:id="@+id/ll_play"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/transparent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ll_right"
+        android:alpha="0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="100dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp">
+
+            <ImageView
+                android:id="@+id/im_dianzan"
+                android:layout_width="35dp"
+                android:layout_height="32dp"
+                android:layout_centerHorizontal="true"/>
+
+            <TextView
+                android:id="@+id/tv_dianzan"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/im_dianzan"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:text="点赞"
+                android:textColor="@android:color/white" />
+
+            <ImageView
+                android:id="@+id/im_shoucang"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_below="@id/tv_dianzan"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="16dp"/>
+
+            <TextView
+                android:id="@+id/tv_pinglun"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/im_shoucang"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:text="收藏"
+                android:textColor="@android:color/white" />
+
+            <ImageView
+                android:id="@+id/im_zhuanfa"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_below="@id/tv_pinglun"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="16dp"
+                android:background="@mipmap/share_icon" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/im_zhuanfa"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:text="分享"
+                android:textColor="@android:color/white" />
+        </RelativeLayout>
+    </LinearLayout>
+    //加载动画
+    <com.mingle.widget.LoadingView
+        android:id="@+id/loadView"
+        app:loadingTextAppearance="@color/white"
+        app:loadingText="加载中..."
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"/>
+
+</RelativeLayout>

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+   android:gravity="center_horizontal"
+    android:background="@drawable/yyw"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:alpha="0.3"
+        android:layout_centerInParent="true"
+        android:background="@drawable/black"
+        android:layout_width="350dp"
+        android:layout_height="500dp" />
+
+   <LinearLayout
+       android:layout_marginTop="150dp"
+       android:id="@+id/lv_shijian"
+       android:gravity="center_vertical"
+       android:layout_centerHorizontal="true"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content">
+
+
+    <EditText
+        android:textColor="#fff"
+        android:textColorHint="#fff"
+        android:shadowColor="#fff"
+        android:textCursorDrawable="@drawable/hint"
+        android:textColorLink="#fff"
+        android:hint=" 请输入时间！"
+        android:id="@+id/edit"
+        android:layout_above="@id/btn"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+
+        android:layout_marginLeft="-20dp"
+        android:textColor="#fff"
+        android:textSize="20dp"
+        android:layout_centerInParent="true"
+        android:layout_toRightOf="@id/edit"
+        android:text="（分钟）"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+   </LinearLayout>
+
+    <LinearLayout
+        android:layout_below="@id/lv_shijian"
+        android:layout_marginTop="40dp"
+        android:id="@+id/lv_daojishi"
+        android:gravity="center_vertical"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/daojishi"
+            android:textColor="#fff"
+            android:textSize="25dp"
+            android:layout_centerInParent="true"
+            android:layout_toRightOf="@id/edit"
+            android:text=""
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_below="@id/lv_daojishi"
+        android:layout_marginTop="20dp"
+        android:id="@+id/lv_jiesuo"
+        android:gravity="center_vertical"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/jieshuo"
+            android:textColor="#fff"
+            android:textSize="20dp"
+            android:layout_centerInParent="true"
+            android:layout_toRightOf="@id/edit"
+            android:text=""
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_below="@id/lv_jiesuo"
+        android:layout_marginTop="60dp"
+        android:id="@+id/lv_pengwo"
+        android:gravity="center_vertical"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/pengwo"
+            android:textColor="#fff"
+            android:textSize="20dp"
+            android:layout_centerInParent="true"
+            android:layout_toRightOf="@id/edit"
+            android:text=""
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/lv_xuexi"
+        android:layout_centerInParent="true"
+        android:layout_below="@id/lv_pengwo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:layout_marginTop="30dp"
+            android:id="@+id/btn_xuexi"
+            android:text="开启学习模式"
+            android:textSize="25dp"
+            android:textColor="#fff"
+            android:background="@drawable/button"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+</RelativeLayout>

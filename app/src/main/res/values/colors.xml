@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <color name="zidingyi">#2ecc71</color>
+    <color name="dialogColor">#FAFAFA</color>
+    <color name="colorYellow">#FFFF33</color>
+    <color name="gray">#666666</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#333333</color>
+    <color name="orange">#FFA500</color>
+    <color name="red">#FF0000</color>
+    <color name="gold">#FFD700</color>
+    <color name="yellow">#FFFF00</color>
+    <color name="blue">#0000FF</color>
+    <color name="purple">#800080</color>
+    <color name="pink">#FFC0CB</color>
+    <color name="greens">#4cbfb5</color>
+    <color name="text_green">#00a496</color>
+    <color name="horizontal_line">#e5e5e5</color>
+    <color name="footer_text_color_selected">#00a496</color>
+    <color name="footer_text_color_normal">#c9c9c9</color>
+    <color name="light_gray">#999999</color>
+    <color name="app_bg">#f9f9f9</color>
+    <color name="pay_red">#e35151</color>
+    <color name="common_action_bar_splitter">#d2d2d2</color>
+    <color name="animationgreens">#41C5F7</color>
+
+    <color name="tolbar_text">#9EA3A7</color>
+    <color name="home_back_unselected">#676767</color>
+    <color name="home_back_selected">#3883D1</color>
+    <color name="home_back_selected01">#E24242</color>
+    <color name="title_back">#2F83C7</color>
+    <color name="product_detail_common">#666666</color>
+    <color name="text_progress">#18b4ed</color>
+    <color name="title_text">#26B8EE</color>
+    <color name="divider_line">#e1e1e1</color>
+    <color name="product_red_common">#e84768</color>
+    <color name="round_red_common">#DC143C</color>
+    <color name="my_title_bg">#28baed</color>
+    <color name="more_text">#5A6E9E</color>
+
+</resources>

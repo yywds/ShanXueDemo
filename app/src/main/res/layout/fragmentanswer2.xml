@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@drawable/bj"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_marginTop="40dp"
+        android:id="@+id/rl_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+<TextView
+    android:id="@+id/tiaozhan"
+    android:text="一站到底"
+    android:textColor="#fff"
+    android:textSize="30dp"
+    android:textStyle="bold"
+    android:gravity="center"
+    android:layout_centerHorizontal="true"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" />
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/tiaozhan"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/time"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:text=""
+            android:background="@drawable/coner"
+            android:textSize="20dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp" />
+
+        <TextView
+            android:id="@+id/kuang"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/datikuang"
+            android:layout_marginTop="0dp"
+            android:layout_width="320dp"
+            android:layout_below="@id/time"
+            android:layout_height="400dp" />
+
+        <TextView
+            android:layout_below="@id/time"
+            android:layout_marginTop="40dp"
+            android:textSize="18dp"
+            android:text=""
+            android:textColor="#fff"
+            android:id="@+id/timu"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="25dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_marginTop="0dp"
+            android:textSize="20dp"
+            android:layout_below="@id/timu"
+            android:text=""
+            android:textColor="#fff"
+            android:id="@+id/xuanze1"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_marginTop="30dp"
+            android:textSize="20dp"
+            android:layout_marginLeft="76dp"
+            android:layout_below="@id/xuanze1"
+            android:text=""
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:textColor="#fff"
+            android:id="@+id/xuanze2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_marginTop="20dp"
+            android:textSize="20dp"
+            android:layout_below="@id/xuanze2"
+            android:text=""
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            android:textColor="#fff"
+            android:id="@+id/xuanze3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:textSize="20dp"
+            android:layout_below="@id/xuanze3"
+            android:text=""
+            android:textColor="#fff"
+            android:layout_marginLeft="135dp"
+            android:id="@+id/xuanze4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/btn"
+            android:textColor="#fff"
+            android:text="再玩一次"
+            android:textSize="20dp"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/btn"
+            android:layout_below="@id/xuanze4"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:layout_width="150dp"
+            android:layout_height="45dp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:background="#fff"
+        android:id="@+id/bottom"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        >
+        <LinearLayout
+            android:id="@+id/ll_main_home1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center"
+            >
+            <ImageView
+                android:id="@+id/iv_main_home1"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/xuexi"
+                />
+            <TextView
+                android:id="@+id/study"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000  "
+                android:text="学习" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/ll_main_home2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center"
+            >
+            <ImageView
+                android:id="@+id/iv_main_home2"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/ceshi"
+                />
+            <TextView
+                android:id="@+id/interaction"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000  "
+                android:text="测试" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="15dp"
+            android:id="@+id/qiangda"
+            android:background="@drawable/qiangda"
+            android:layout_width="42dp"
+            android:layout_height="42dp" />
+
+        <LinearLayout
+            android:id="@+id/ll_main_home3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center"
+            >
+            <ImageView
+                android:id="@+id/iv_main_home3"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/gongju"
+                />
+
+            <TextView
+                android:id="@+id/pk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000  "
+                android:text="工具" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_main_home4"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center"
+            >
+
+            <ImageView
+                android:id="@+id/iv_main_home4"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/tx"
+                />
+            <TextView
+                android:id="@+id/me"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000  "
+                android:text="我的" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

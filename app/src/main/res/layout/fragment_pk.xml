@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:background="#ebebeb"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+    <TextView
+        android:text="工具"
+        android:textSize="15dp"
+        android:textColor="#000"
+        android:layout_marginLeft="20dp"
+        android:layout_width="match_parent"
+       android:gravity="bottom"
+        android:layout_height="60dp" />
+    </RelativeLayout>
+    <TextView
+        android:textColor="#000"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="15dp"
+        android:background="#fff"
+        android:id="@+id/tv_saoyisao"
+        android:textSize="15dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:drawableRight="@drawable/right"
+        android:layout_height="50dp"
+        android:layout_width="match_parent"
+        android:gravity="center_vertical"
+        android:text="扫一扫" />
+
+
+
+    <TextView
+        android:textColor="#000"
+        android:layout_marginBottom="15dp"
+        android:background="#fff"
+        android:id="@+id/tv_wenzitique"
+        android:textSize="15dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:drawableRight="@drawable/right"
+        android:layout_height="50dp"
+        android:layout_width="match_parent"
+        android:gravity="center_vertical"
+        android:text="文字提取" />
+
+    <TextView
+        android:textColor="#000"
+        android:layout_marginBottom="15dp"
+        android:background="#fff"
+        android:id="@+id/tv_yinghanhuyi"
+        android:textSize="15dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:drawableRight="@drawable/right"
+        android:layout_height="50dp"
+        android:layout_width="match_parent"
+        android:gravity="center_vertical"
+        android:text="拍照翻译" />
+
+    <TextView
+        android:textColor="#000"
+        android:layout_marginBottom="15dp"
+        android:background="#fff"
+        android:id="@+id/tv_jihehuaban"
+        android:textSize="15dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:drawableRight="@drawable/right"
+        android:layout_height="50dp"
+        android:layout_width="match_parent"
+        android:gravity="center_vertical"
+        android:text="几何画板" />
+
+    <TextView
+        android:textColor="#000"
+        android:layout_marginBottom="8dp"
+        android:background="#fff"
+        android:id="@+id/tv_xuebamoshi"
+        android:textSize="15dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:drawableRight="@drawable/right"
+        android:layout_height="50dp"
+        android:layout_width="match_parent"
+        android:gravity="center_vertical"
+        android:text="学习模式" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+        <LinearLayout
+            android:background="#fff"
+            android:id="@+id/bottom"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            >
+        <LinearLayout
+            android:id="@+id/ll_main_home1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center"
+            >
+            <ImageView
+                android:id="@+id/iv_main_home1"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/xuexi"
+                />
+            <TextView
+                android:id="@+id/study"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000  "
+                android:text="学习" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/ll_main_home2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center"
+            >
+            <ImageView
+                android:id="@+id/iv_main_home2"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/ceshi"
+                />
+            <TextView
+                android:id="@+id/interaction"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000  "
+                android:text="测试" />
+        </LinearLayout>
+
+            <TextView
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                android:id="@+id/qiangda"
+                android:background="@drawable/qiangda"
+                android:layout_width="42dp"
+                android:layout_height="42dp" />
+
+            <LinearLayout
+                android:id="@+id/ll_main_home3"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center"
+                >
+                <ImageView
+                    android:id="@+id/iv_main_home3"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/gongju"
+                    />
+
+            <TextView
+                android:id="@+id/pk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000  "
+                android:text="工具" />
+            </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_main_home4"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center"
+            >
+
+            <ImageView
+                android:id="@+id/iv_main_home4"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/tx"
+                />
+            <TextView
+                android:id="@+id/me"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000  "
+                android:text="我的" />
+        </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

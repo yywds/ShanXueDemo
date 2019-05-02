@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <com.example.administrator.onlinelearning.CommonAndPlugin.CustomVideoView
+        android:id="@+id/videoview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <!--用TextView给布局加透明效果，更加模仿QQ登录时的视频引导页-->
+    <!--<TextView-->
+        <!--android:id="@+id/tv"-->
+        <!--android:background="#fff"-->
+        <!--android:alpha="0.3"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent" />-->
+
+
+        <ImageView
+           android:id="@+id/imageView"
+            android:src="@drawable/jingyin"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="40dp"
+            android:layout_width="25dp"
+            android:layout_height="25dp" />
+
+</RelativeLayout>

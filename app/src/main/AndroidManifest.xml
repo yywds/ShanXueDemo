@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.administrator.onlinelearning">
+
+    <uses-permission android:name="android.permission.INTERNET"/>//网络权限
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>//读写本地文件权限
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>  //读取电话状态权限
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/> //悬浮窗权限
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/> //定位权限
+    <uses-permission android:name="android.permission.CAMERA" />//相机权限
+    <uses-permission android:name="android.permission.SEND_SMS"/> //发送SMS短信权限
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/> //麦克风权限
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" /> //访问Wi-Fi网络状态信息
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> //获取网络信息状态
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" /> //改变网络连接状态
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/> //改变Wi-Fi连接状态
+
+
+
+    <application
+
+        android:name=".CommonAndPlugin.VideoCache"
+        android:allowBackup="true"
+        android:icon="@mipmap/apptubiao"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        //今日头条框架屏幕适配
+        <meta-data android:name="design_width_in_dp" android:value="360"/>
+        <meta-data android:name="design_height_in_dp" android:value="640"/>
+
+        //配置第一启动页
+        <activity android:name=".AppBootPage.Start">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        //注册
+        <activity android:name=".LoginAndRegister.RegisterPage"/>
+        <activity android:name=".LoginAndRegister.LoginPage"/>
+        <activity android:name=".AppBootPage.VideoBootPage"/>
+        <activity android:name=".LoginAndRegister.Guide"/>
+        <activity android:name=".AppBootPage.BootPage"/>
+        <activity android:name=".LoginAndRegister.ToLogin"/>
+        <activity android:name=".LoginAndRegister.FindPwd"/>
+        <activity android:name=".Page.Mainpage"/>
+        <activity android:name=".Page.home.HomeMainActivity"/>
+        <activity android:name=".Page.home.StudyMainpage"/>
+        <activity android:name=".Page.home.InteractionMainpage"/>
+        <activity android:name=".Page.home.PkMainpage"/>
+        <activity android:name=".Page.home.MeMainpage"/>
+        <activity android:name=".Page.More.MoreMainActivity"/>
+        <activity android:name=".Page.Tool.ToolMainActivity"/>
+        <activity android:name=".Page.Test.TestMainActivity"/>
+        <activity android:name=".Page.Answer.AnswerMainActivity"/>
+        <activity android:name=".Page.Answer.AnswerMainActivity2"/>
+        <activity android:name=".Page.Answer.AnswerMainActivity3"/>
+        <activity android:name=".Page.Answer.AnswerMainActivity4"/>
+        <activity android:name=".Page.Answer.AnswerMainActivity5"/>
+        <activity android:name=".Page.Answer.AnswerMainActivity6"/>
+        <activity android:name=".Page.Answer.AnswerMainActivity7"/>
+        <activity android:name=".Page.Answer.AnswerMainActivityshibai"/>
+        <activity android:name=".Page.Tool.Zxingshow"/>
+        <activity android:name=".Page.Tool.OCR.GeneralActivity"/>
+        <activity android:name=".Page.Tool.Translate.TranslateMainActivity"/>
+        <activity android:name=".Page.Tool.Study.StudyActivity"/>
+        <activity android:name=".Page.Tool.DrawingView.MainActivity"/>
+        <activity android:name=".Page.More.Nichen"/>
+        <activity android:name=".Page.More.Gxqm"/>
+
+
+    </application>
+
+</manifest>
